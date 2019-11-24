@@ -1,0 +1,12 @@
+// copy firebase config from console.firebase.google.com
+
+export const config = {
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: ""
+};
