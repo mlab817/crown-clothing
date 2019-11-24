@@ -32,7 +32,7 @@ class App extends React.Component {
               ...snapShot.data()
             }
           })
-        })
+        });
       }
       // if user is signed out, set state to userAuth
       this.setState({ currentUser: userAuth })
