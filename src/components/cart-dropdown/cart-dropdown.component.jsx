@@ -10,7 +10,6 @@ const CartDropdown = ({ cartItems }) => (
   <div className='cart-dropdown'>
     <div className='cart-items'>
       {
-        // map cart items here
         cartItems.map(cartItem => <CartItem key={cartItem.id} item={cartItem}/> )
       }
       
