@@ -27,9 +27,12 @@ const CheckoutPage = ({ cartItems, cartItemsTotal }) => (
       </div>
     </div>
     {
+      cartItems.length ? 
       cartItems.map(cartItem => 
         <CheckoutItem key={cartItem.id} cartItem={cartItem} />
       )
+      :
+      <div className='empty-cart'>Your cart is empty</div>
     }
     <div className='total'>
       <span>TOTAL: ${ cartItemsTotal }</span>
