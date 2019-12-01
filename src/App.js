@@ -18,6 +18,7 @@ class App extends React.Component {
   unsubscribeFromAuth = null;
 
   componentDidMount() {
+
     const { setCurrentUser } = this.props;
 
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
@@ -34,7 +35,7 @@ class App extends React.Component {
         });
       }
       // if user is signed out, set state to userAuth
-      setCurrentUser(userAuth)
+      setCurrentUser(userAuth);
     })
   }
 
